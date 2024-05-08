@@ -1,0 +1,80 @@
+@use 'variaveis';
+@use 'hero';
+@use 'shows';
+@use 'available-devices'; 
+@use 'faq';
+@use 'footer';
+@use 'header';
+@use 'poema';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Avenir, sans-serif;
+    list-style: none;
+}
+
+body {
+    background-color: black;
+}
+
+@mixin text($fontSize: 16px) {
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: variaveis.$corTextoPrincipal;
+}
+
+@mixin title($fontSize: 30px) {
+    @include text($fontSize);
+    color: variaveis.$corDeTexto;
+}
+
+.text--big {
+    @include text(18px);
+
+    @media (max-width: 768px) {
+        @include text(15px);
+    }
+}
+
+.text {
+    @include text;
+
+    @media (max-width: 768px) {
+        @include text(10px);
+    }
+}
+
+.text--small {
+    @include text(10px);
+   
+
+    @media (max-width: 768px) {
+        @include text(10px);
+        
+    }
+}
+
+
+
+.title {
+    @include title;
+
+    @media (max-width: 768px) {
+        @include title(18px);
+    }
+}
+
+.title--small {
+    @include title(22px);
+   
+
+    @media (max-width: 768px) {
+        @include title(20px);
+        
+    }
+} 
+
+
