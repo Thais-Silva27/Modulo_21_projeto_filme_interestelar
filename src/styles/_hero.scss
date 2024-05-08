@@ -1,0 +1,30 @@
+@use 'variaveis';
+
+.hero {
+    padding: 5.6vw;
+    min-height: 80vh;
+    background-image: url('../images/capa\ insterestelar\ 2.png');
+    background-size: cover;
+}
+
+.hero__content {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 5.3vw;
+        margin-bottom: -500px;
+        background-image: url('../images/capa\ insterestelar\ 2.png');
+        background-repeat: no-repeat;
+        background-size: 90%; /* Reduz o tamanho da imagem de fundo */
+        background-position:top; /* Centraliza a imagem de fundo na parte superior */
+        margin-top: -10px; /* Ajusta a margem para posição relativa à imagem de fundo */
+    }
+     
+    .hero__content {
+        display: none; /* Oculta o conteúdo da section */
+        padding-bottom: 16px;
+    }
+   
+}
