@@ -1,4 +1,4 @@
-Nesse modulo foi ensinado:
+O que foi estudado neste modulo:
 
 * Estrutura do projeto;
 * Configuração de um ambiente de desenvolvimento;
